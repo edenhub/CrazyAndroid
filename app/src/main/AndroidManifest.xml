@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ch02_imageview_activity"
+            android:label="@string/title_activity_ch02_imageview_activity" >
+        </activity>
+        <activity
+            android:name=".ch02_drawview_activity"
+            android:label="@string/title_activity_ch02_drawview_activity" >
+        </activity>
+        <activity
+            android:name=".ch02_linerlayout_activity"
+            android:label="@string/title_activity_ch02_linerlayout_activity" >
+        </activity>
     </application>
 
 </manifest>

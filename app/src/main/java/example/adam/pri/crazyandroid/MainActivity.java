@@ -1,17 +1,58 @@
 package example.adam.pri.crazyandroid;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 
 public class MainActivity extends ActionBarActivity {
+    private Button ch02_imageView_bt;
+    private Button ch02_draw_bt;
+    private Button ch02_linearlayout_bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        LinearLayout root = (LinearLayout)findViewById(R.id.main_layout_ch02_01);
+
+        ch02_imageView_bt = (Button) findViewById(R.id.ch02_imageView_bt);
+
+        ch02_imageView_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ch02_imageview_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        ch02_draw_bt = (Button)findViewById(R.id.ch02_draw_bt);
+        ch02_draw_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ch02_drawview_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        ch02_linearlayout_bt = new Button(this);
+        ch02_linearlayout_bt.setText("LinerLayout");
+        ch02_linearlayout_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ch02_linerlayout_activity.class);
+                startActivity(intent);
+            }
+        });
+        root.addView(ch02_linearlayout_bt);
+
     }
 
 

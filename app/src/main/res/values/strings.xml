@@ -4,5 +4,8 @@
     <string name="app_name">CrazyAndroid</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_ch02_imageview_activity">ch02_imageview_activity</string>
+    <string name="title_activity_ch02_drawview_activity">ch02_drawview_activity</string>
+    <string name="title_activity_ch02_linerlayout_activity">ch02_linerlayout_activity</string>
 
 </resources>
