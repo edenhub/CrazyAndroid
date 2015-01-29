@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -21,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LinearLayout root = (LinearLayout)findViewById(R.id.main_layout_ch02_01);
+        TableRow root = (TableRow)findViewById(R.id.main_layout_ch02_01);
 
         ch02_imageView_bt = (Button) findViewById(R.id.ch02_imageView_bt);
 
@@ -52,6 +54,33 @@ public class MainActivity extends ActionBarActivity {
             }
         });
         root.addView(ch02_linearlayout_bt);
+
+        Button ch02_framelayout_bt = (Button) findViewById(R.id.ch02_framelayout_bt);
+        ch02_framelayout_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ch02_framelayout_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button ch02_textview_bt01 = (Button)findViewById(R.id.ch02_textview_bt01);
+        ch02_textview_bt01.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ch02_textview01_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button ch02_textview_bt02 = (Button)findViewById(R.id.ch02_textview_bt02);
+        ch02_textview_bt02.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ch02_textview02_activity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

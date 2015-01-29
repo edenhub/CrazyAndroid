@@ -7,5 +7,7 @@
     <string name="title_activity_ch02_imageview_activity">ch02_imageview_activity</string>
     <string name="title_activity_ch02_drawview_activity">ch02_drawview_activity</string>
     <string name="title_activity_ch02_linerlayout_activity">ch02_linerlayout_activity</string>
+    <string name="title_activity_ch02_framelayout_activity">ch02_framelayout_activity</string>
+    <string name="title_activity_ch02_textview01_activity">ch02_textview01_activity</string>
 
 </resources>

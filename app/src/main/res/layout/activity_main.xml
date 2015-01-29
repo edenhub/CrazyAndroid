@@ -10,21 +10,55 @@
     <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content" />-->
 
-    <LinearLayout
+    <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/main_layout_ch02_01"
+        android:id="@+id/main_layout_ch02"
         android:orientation="horizontal">
-        <Button android:id="@+id/ch02_imageView_bt"
-            android:text="image view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <Button
-            android:id="@+id/ch02_draw_bt"
-            android:text="draw"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-     </LinearLayout>
+       <TableRow
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/main_layout_ch02_01">
+           <Button android:id="@+id/ch02_imageView_bt"
+               android:text="image view"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <Button
+               android:id="@+id/ch02_draw_bt"
+               android:text="draw"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </TableRow>
+
+        <!--<TableRow-->
+            <!--android:layotu_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/main_layout_ch02_02">-->
+            <!--<Button-->
+                <!--android:id="@+id/ch02_framelayout_bt"-->
+                <!--android:text="draw"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <!--</TableRow>-->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_layout_ch02_02">
+            <Button android:id="@+id/ch02_framelayout_bt"
+                android:text="image view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button android:id="@+id/ch02_textview_bt01"
+                android:text="tv_bt01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button android:id="@+id/ch02_textview_bt02"
+                android:text="tv_bt02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+     </TableLayout>
 
 
 </LinearLayout>

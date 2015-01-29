@@ -28,6 +28,16 @@
             android:name=".ch02_linerlayout_activity"
             android:label="@string/title_activity_ch02_linerlayout_activity" >
         </activity>
+        <activity
+            android:name=".ch02_framelayout_activity"
+            android:label="@string/title_activity_ch02_framelayout_activity" >
+        </activity>
+        <activity
+            android:name=".ch02_textview01_activity"
+            android:label="@string/title_activity_ch02_textview01_activity" >
+        </activity>
+        <activity android:name=".ch02_textview02_activity"
+            android:label="activity_ch02_textview02_activity"/>
     </application>
 
 </manifest>
