@@ -1,22 +1,32 @@
 package example.adam.pri.crazyandroid;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 
 public class MainActivity extends ActionBarActivity {
     private Button ch02_imageView_bt;
     private Button ch02_draw_bt;
     private Button ch02_linearlayout_bt;
+
+    private Map<Integer,Button> buttonMap = new ConcurrentHashMap<Integer,Button>(30);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +92,48 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
+//        final Button ch02_alpha_bt = (Button)findViewById(R.id.ch02_alpha_bt);
+//        ch02_alpha_bt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,ch02_alpha_activity.class);
+//                startActivity(intent);
+//            }
+//        });
+
+        addNewButtonInLayout(R.id.ch02_alpha_bt,ch02_alpha_activity.class);
+        addNewButtonInLayout(R.id.ch02_auto_bt,ch02_auto_activity.class);
+        addNewButtonInLayout(R.id.ch02_datetime_bt,ch02_datetime_activity.class);
+        addNewButtonInLayout(R.id.ch02_progress_bt,ch02_progress_activity.class);
+        addNewButtonInLayout(R.id.ch02_tab_bt,ch02_tab_activity.class);
+        addNewButtonInLayout(R.id.ch02_scroll_bt,ch02_scroll_activity.class);
+        addNewButtonInLayout(R.id.ch02_listview_bt01,ch02_listview01_activity.class);
+        addNewButtonInLayout(R.id.ch02_listview_bt02,ch02_listview02_activity.class);
     }
+
+    private void addNewButtonInLayout(int id, final Class<? extends Activity> targetActivity){
+        Button button = (Button)findViewById(id);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,targetActivity);
+                startActivity(intent);
+            }
+        });
+
+        buttonMap.put(id,button);
+    }
+
+    private void addNewButtonInLayout(int parentId,int id,String text,
+                                      final Class<? extends Activity> targetActivity){
+        ViewGroup root = (ViewGroup)findViewById(parentId);
+        addNewButtonInLayout(id,targetActivity);
+        Button button = buttonMap.get(id);
+        button.setText(text);
+        root.addView(button);
+    }
+
+
 
 
     @Override
