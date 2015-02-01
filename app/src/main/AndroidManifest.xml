@@ -38,6 +38,22 @@
         </activity>
         <activity android:name=".ch02_textview02_activity"
             android:label="activity_ch02_textview02_activity"/>
+        <activity android:name=".ch02_alpha_activity"
+            android:label="activity_alpha_activity"/>
+        <activity android:name=".ch02_auto_activity"
+            android:label="activity_auto_activity"/>
+        <activity android:name=".ch02_datetime_activity"
+            android:label="activity_datetime_activity"/>
+        <activity android:name=".ch02_progress_activity"
+            android:label="activity_progress_activity"/>
+        <activity android:name=".ch02_tab_activity"
+            android:label="activity_tab_activity"/>
+        <activity android:name=".ch02_scroll_activity"
+            android:label="activity_scroll_activity"/>
+        <activity android:name=".ch02_listview01_activity"
+            android:label="activity_ch02_listview01_activity"/>
+        <activity android:name=".ch02_listview02_activity"
+            android:label="activity_ch02_listview02_activity"/>
     </application>
 
 </manifest>

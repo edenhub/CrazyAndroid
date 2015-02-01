@@ -10,6 +10,10 @@
     <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content" />-->
 
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -58,7 +62,63 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_layout_ch02_03">
+            <Button android:id="@+id/ch02_alpha_bt"
+                android:text="alpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button android:id="@+id/ch02_auto_bt"
+                android:text="auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button android:id="@+id/ch02_datetime_bt"
+                android:text="datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_layout_ch02_04">
+            <Button android:id="@+id/ch02_progress_bt"
+                android:text="progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button android:id="@+id/ch02_tab_bt"
+                android:text="tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button android:id="@+id/ch02_scroll_bt"
+                android:text="scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_layout_ch02_05">
+            <Button android:id="@+id/ch02_listview_bt01"
+                android:text="listview01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button android:id="@+id/ch02_listview_bt02"
+                android:text="listview02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <!--<Button android:id="@+id/ch02_scroll_bt"-->
+                <!--android:text="scroll"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+        </TableRow>
      </TableLayout>
+
+    </HorizontalScrollView>
 
 
 </LinearLayout>
