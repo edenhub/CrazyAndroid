@@ -54,6 +54,10 @@
             android:label="activity_ch02_listview01_activity"/>
         <activity android:name=".ch02_listview02_activity"
             android:label="activity_ch02_listview02_activity"/>
+        <activity android:name=".ch02_listview03_simple_activity"
+            android:label="activity_ch02_listview03_simple_activity"/>
+        <activity android:name=".ch02_listview04_expand_activity"
+            android:label="activity_ch02_listview04_expand_activity"/>
     </application>
 
 </manifest>

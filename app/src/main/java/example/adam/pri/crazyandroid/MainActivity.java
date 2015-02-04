@@ -37,25 +37,28 @@ public class MainActivity extends ActionBarActivity {
 
         ch02_imageView_bt = (Button) findViewById(R.id.ch02_imageView_bt);
 
-        ch02_imageView_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,ch02_imageview_activity.class);
-                startActivity(intent);
-            }
-        });
+//        ch02_imageView_bt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,ch02_imageview_activity.class);
+//                startActivity(intent);
+//            }
+//        });
 
-        ch02_draw_bt = (Button)findViewById(R.id.ch02_draw_bt);
-        ch02_draw_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,ch02_drawview_activity.class);
-                startActivity(intent);
-            }
-        });
+
+//        ch02_draw_bt = (Button)findViewById(R.id.ch02_draw_bt);
+//        ch02_draw_bt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,ch02_drawview_activity.class);
+//                startActivity(intent);
+//            }
+//        });
+
 
         ch02_linearlayout_bt = new Button(this);
         ch02_linearlayout_bt.setText("LinerLayout");
+
         ch02_linearlayout_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,32 +68,33 @@ public class MainActivity extends ActionBarActivity {
         });
         root.addView(ch02_linearlayout_bt);
 
-        Button ch02_framelayout_bt = (Button) findViewById(R.id.ch02_framelayout_bt);
-        ch02_framelayout_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,ch02_framelayout_activity.class);
-                startActivity(intent);
-            }
-        });
+//        Button ch02_framelayout_bt = (Button) findViewById(R.id.ch02_framelayout_bt);
+//        ch02_framelayout_bt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,ch02_framelayout_activity.class);
+//                startActivity(intent);
+//            }
+//        });
 
-        Button ch02_textview_bt01 = (Button)findViewById(R.id.ch02_textview_bt01);
-        ch02_textview_bt01.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,ch02_textview01_activity.class);
-                startActivity(intent);
-            }
-        });
+//        Button ch02_textview_bt01 = (Button)findViewById(R.id.ch02_textview_bt01);
+//        ch02_textview_bt01.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,ch02_textview01_activity.class);
+//                startActivity(intent);
+//            }
+//        });
 
-        Button ch02_textview_bt02 = (Button)findViewById(R.id.ch02_textview_bt02);
-        ch02_textview_bt02.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,ch02_textview02_activity.class);
-                startActivity(intent);
-            }
-        });
+
+//        Button ch02_textview_bt02 = (Button)findViewById(R.id.ch02_textview_bt02);
+//        ch02_textview_bt02.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,ch02_textview02_activity.class);
+//                startActivity(intent);
+//            }
+//        });
 
 //        final Button ch02_alpha_bt = (Button)findViewById(R.id.ch02_alpha_bt);
 //        ch02_alpha_bt.setOnClickListener(new View.OnClickListener() {
@@ -101,6 +105,11 @@ public class MainActivity extends ActionBarActivity {
 //            }
 //        });
 
+        addNewButtonInLayout(R.id.ch02_imageView_bt,ch02_imageview_activity.class);
+        addNewButtonInLayout(R.id.ch02_draw_bt,ch02_drawview_activity.class);
+        addNewButtonInLayout(R.id.ch02_framelayout_bt,ch02_framelayout_activity.class);
+        addNewButtonInLayout(R.id.ch02_textview_bt01,ch02_textview01_activity.class);
+        addNewButtonInLayout(R.id.ch02_textview_bt02,ch02_textview02_activity.class);
         addNewButtonInLayout(R.id.ch02_alpha_bt,ch02_alpha_activity.class);
         addNewButtonInLayout(R.id.ch02_auto_bt,ch02_auto_activity.class);
         addNewButtonInLayout(R.id.ch02_datetime_bt,ch02_datetime_activity.class);
@@ -109,6 +118,8 @@ public class MainActivity extends ActionBarActivity {
         addNewButtonInLayout(R.id.ch02_scroll_bt,ch02_scroll_activity.class);
         addNewButtonInLayout(R.id.ch02_listview_bt01,ch02_listview01_activity.class);
         addNewButtonInLayout(R.id.ch02_listview_bt02,ch02_listview02_activity.class);
+        addNewButtonInLayout(R.id.ch02_simple_bt,ch02_listview03_simple_activity.class);
+        addNewButtonInLayout(R.id.ch02_listview_btexpd,ch02_listview04_expand_activity.class);
     }
 
     private void addNewButtonInLayout(int id, final Class<? extends Activity> targetActivity){

@@ -111,8 +111,25 @@
                 android:text="listview02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
-            <!--<Button android:id="@+id/ch02_scroll_bt"-->
-                <!--android:text="scroll"-->
+            <Button android:id="@+id/ch02_simple_bt"
+                android:text="simple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_layout_ch02_06">
+            <Button android:id="@+id/ch02_listview_btexpd"
+                android:text="expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <!--<Button android:id="@+id/ch02_listview_bt02"-->
+                <!--android:text="listview02"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <!--<Button android:id="@+id/ch02_simple_bt"-->
+                <!--android:text="simple"-->
                 <!--android:layout_width="wrap_content"-->
                 <!--android:layout_height="wrap_content"/>-->
         </TableRow>
