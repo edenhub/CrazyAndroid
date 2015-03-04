@@ -20,13 +20,13 @@ import java.util.Map;
 /**
  * Created by adam on 2015/3/3.
  */
-public class ch02_grideview_activity extends Activity {
+public class ch02_grideview_activity extends Activity implements ViewSwitcher.ViewFactory {
 
     private static final String TAG = "==Test GridView==";
 
     private int[] imageIds = new int[]{
-            R.drawable.p1,R.drawable.p2,
-            R.drawable.p4,R.drawable.p5
+            R.drawable.p1, R.drawable.p2,
+            R.drawable.p4, R.drawable.p5
     };
 
     private GridView gridView;
@@ -38,33 +38,34 @@ public class ch02_grideview_activity extends Activity {
 
         setContentView(R.layout.activity_ch02_gridview_activity);
 
-        gridView = (GridView)findViewById(R.id.ch02_gridview02_gv);
-        imageSwitcher = (ImageSwitcher)findViewById(R.id.ch02_gridview02_ims);
+        gridView = (GridView) findViewById(R.id.ch02_gridview02_gv);
+        imageSwitcher = (ImageSwitcher) findViewById(R.id.ch02_gridview02_ims);
 
-        List<Map<String,Object>> listItems =
+        List<Map<String, Object>> listItems =
                 new ArrayList<Map<String, Object>>();
 
-        for (int i=0;i<imageIds.length;i++){
-            Map<String,Object> listItem = new HashMap<String, Object>();
-            listItem.put("image",imageIds[i]);
+        for (int i = 0; i < imageIds.length; i++) {
+            Map<String, Object> listItem = new HashMap<String, Object>();
+            listItem.put("image", imageIds[i]);
             listItems.add(listItem);
         }
 
-        imageSwitcher.setInAnimation(AnimationUtils.loadAnimation(this,android.R.anim.fade_in));
-        imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this,android.R.anim.fade_out));
+        imageSwitcher.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
+        imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
 
-        imageSwitcher.setFactory(new ViewSwitcher.ViewFactory() {
-            @Override
-            public View makeView() {
-                ImageView imageView = new ImageView(ch02_gridview_activity.this);
-                imageView.setBackgroundColor(0xff0000);
-                imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                imageView.setLayoutParams(new ImageSwitcher.LayoutParams
-                        (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
-
-                return imageView;
-            }
-        });
+        imageSwitcher.setFactory(this);
+//        imageSwitcher.setFactory(new ViewSwitcher.ViewFactory() {
+//            @Override
+//            public View makeView() {
+//                ImageView imageView = new ImageView();
+//                imageView.setBackgroundColor(0xff0000);
+//                imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+//                imageView.setLayoutParams(new ImageSwitcher.LayoutParams
+//                        (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+//
+//                return imageView;
+//            }
+//        });
 
         SimpleAdapter simpleAdapter = new SimpleAdapter(this,
                 listItems,
@@ -76,7 +77,7 @@ public class ch02_grideview_activity extends Activity {
         gridView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                imageSwitcher.setImageResource(imageIds[position%imageIds.length]);
+                imageSwitcher.setImageResource(imageIds[position % imageIds.length]);
             }
 
             @Override
@@ -88,8 +89,19 @@ public class ch02_grideview_activity extends Activity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                imageSwitcher.setImageResource(imageIds[position%imageIds.length]);
+                imageSwitcher.setImageResource(imageIds[position % imageIds.length]);
             }
         });
+    }
+
+    @Override
+    public View makeView() {
+        ImageView imageView = new ImageView(this);
+        imageView.setBackgroundColor(0xff0000);
+        imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        imageView.setLayoutParams(new ImageSwitcher.LayoutParams
+                (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+        return imageView;
     }
 }

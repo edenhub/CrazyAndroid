@@ -58,6 +58,8 @@
             android:label="activity_ch02_listview03_simple_activity"/>
         <activity android:name=".ch02_listview04_expand_activity"
             android:label="activity_ch02_listview04_expand_activity"/>
+        <activity android:name=".ch02_gridview_activity"
+            android:label="activity_ch02_gridview_activity"/>
     </application>
 
 </manifest>
