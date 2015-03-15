@@ -122,6 +122,9 @@ public class MainActivity extends ActionBarActivity {
         addNewButtonInLayout(R.id.ch02_listview_btexpd,ch02_listview04_expand_activity.class);
         addNewButtonInLayout(R.id.ch02_gridview_bt,ch02_gridview_activity.class);
         addNewButtonInLayout(R.id.ch02_gallery_bt,ch02_gallery_activity.class);
+        addNewButtonInLayout(R.id.ch02_dialog_alert1,ch02_dialog_alert1_activity.class);
+        addNewButtonInLayout(R.id.ch02_toast_bt,ch02_toash_activity.class);
+        addNewButtonInLayout(R.id.ch02_notification_bt,ch02_notification_activity.class);
     }
 
     private void addNewButtonInLayout(int id, final Class<? extends Activity> targetActivity){

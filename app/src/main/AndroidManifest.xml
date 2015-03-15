@@ -62,6 +62,17 @@
             android:label="activity_ch02_gridview_activity"/>
         <activity android:name=".ch02_gallery_activity"
             android:label="activity_ch02_gallery_activity"/>
+        <activity android:name=".ch02_dialog_alert1_activity"
+            android:label="activity_dialog_alert1_activity"/>
+        <activity android:name=".ch02_toash_activity"
+            android:label="activity_toash_activity"/>
+        <activity android:name=".ch02_notification_activity"
+            android:label="activity_notification_activity"/>
+        <activity android:name=".ch02_notification_to_activity"
+            android:label="activity_notification_to_activity"/>
+
     </application>
 
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 </manifest>
