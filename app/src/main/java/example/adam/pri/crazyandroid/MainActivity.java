@@ -4,21 +4,17 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TableLayout;
 import android.widget.TableRow;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import example.adam.pri.crazyandroid.ch03.DrawView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -125,6 +121,13 @@ public class MainActivity extends ActionBarActivity {
         addNewButtonInLayout(R.id.ch02_dialog_alert1,ch02_dialog_alert1_activity.class);
         addNewButtonInLayout(R.id.ch02_toast_bt,ch02_toash_activity.class);
         addNewButtonInLayout(R.id.ch02_notification_bt,ch02_notification_activity.class);
+
+
+//        ch03
+        addNewButtonInLayout(R.id.ch03_planeGame_bt,DrawView.class);
+        addNewButtonInLayout(R.id.ch03_drawview_bt,ch03_drawview_activity.class);
+        addNewButtonInLayout(R.id.ch03_configurationchange_bt,ch03_changecfg_activity.class);
+        addNewButtonInLayout(R.id.ch03_handler_bt,ch03_handler_activity.class);
     }
 
     private void addNewButtonInLayout(int id, final Class<? extends Activity> targetActivity){

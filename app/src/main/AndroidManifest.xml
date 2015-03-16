@@ -71,8 +71,22 @@
         <activity android:name=".ch02_notification_to_activity"
             android:label="activity_notification_to_activity"/>
 
+        <activity android:name=".ch03.DrawView"
+            android:label="activity_planeGame_activity"/>
+
+        <activity android:name=".ch03_drawview_activity"
+            android:label="activity_drawview_activity"/>
+
+        <activity android:name=".ch03_changecfg_activity"
+            android:label="activity_changecfg_activity"
+            android:configChanges="orientation"/>
+
+        <activity android:name=".ch03_handler_activity"
+            android:label="activity_handler_activity"/>
+
     </application>
 
     <uses-permission android:name="android.permission.FLASHLIGHT"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
 </manifest>

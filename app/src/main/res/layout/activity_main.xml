@@ -150,6 +150,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </TableRow>
+
+
+        <!--ch03-->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_layout_ch03_08">
+            <Button android:id="@+id/ch03_planeGame_bt"
+                android:text="PlaneGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button android:id="@+id/ch03_drawview_bt"
+                android:text="drawview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button android:id="@+id/ch03_configurationchange_bt"
+                android:text="ConfigurationChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_layout_ch03_09">
+            <Button android:id="@+id/ch03_handler_bt"
+                android:text="Handler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <!--<Button android:id="@+id/ch03_drawview_bt"-->
+                <!--android:text="drawview"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <!--<Button android:id="@+id/ch03_configurationchange_bt"-->
+                <!--android:text="ConfigurationChange"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+        </TableRow>
      </TableLayout>
 
     </HorizontalScrollView>
