@@ -20,4 +20,14 @@
         <item>小年IPA</item>
         <item>迈克尔杰克逊</item>
     </array>
+
+    <array name="gender_name_list">
+        <item>meal</item>
+        <item>femeal</item>
+    </array>
+
+    <array name="gender_value_list">
+        <item>0</item>
+        <item>1</item>
+    </array>
 </resources>

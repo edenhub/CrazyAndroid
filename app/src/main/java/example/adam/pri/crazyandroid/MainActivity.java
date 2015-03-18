@@ -128,6 +128,10 @@ public class MainActivity extends ActionBarActivity {
         addNewButtonInLayout(R.id.ch03_drawview_bt,ch03_drawview_activity.class);
         addNewButtonInLayout(R.id.ch03_configurationchange_bt,ch03_changecfg_activity.class);
         addNewButtonInLayout(R.id.ch03_handler_bt,ch03_handler_activity.class);
+
+//        ch04
+        addNewButtonInLayout(R.id.ch04_launcher_bt,ch04_launcher_activity.class);
+        addNewButtonInLayout(R.id.ch04_bundle_bt,ch04_bundle_first_activity.class);
     }
 
     private void addNewButtonInLayout(int id, final Class<? extends Activity> targetActivity){

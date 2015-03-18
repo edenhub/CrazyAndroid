@@ -84,6 +84,19 @@
         <activity android:name=".ch03_handler_activity"
             android:label="activity_handler_activity"/>
 
+        <activity android:name=".ch04_launcher_activity"
+            android:label="activity_ch04_launcher_activity"/>
+        <activity android:name=".ch04.MyPreferenceActivity"
+            android:label="activity_MyPreferenceActivity"/>
+        <activity android:name=".ch04.MyExpandListActivity"
+            android:label="activity_MyExpandListActivity"/>
+
+        <activity android:name=".ch04_bundle_first_activity"
+            android:label="activity_bundle_first_activity"/>
+
+        <activity android:name=".ch04_bundle_second_activity"
+            android:label="activity_ch02_bundle_second_activity"/>
+
     </application>
 
     <uses-permission android:name="android.permission.FLASHLIGHT"/>
