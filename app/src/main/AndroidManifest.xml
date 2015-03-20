@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="example.adam.pri.crazyandroid" >
+    package="example.adam.pri.crazyandroid">
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,88 +18,126 @@
         </activity>
         <activity
             android:name=".ch02_imageview_activity"
-            android:label="@string/title_activity_ch02_imageview_activity" >
-        </activity>
+            android:label="@string/title_activity_ch02_imageview_activity"></activity>
         <activity
             android:name=".ch02_drawview_activity"
-            android:label="@string/title_activity_ch02_drawview_activity" >
-        </activity>
+            android:label="@string/title_activity_ch02_drawview_activity"></activity>
         <activity
             android:name=".ch02_linerlayout_activity"
-            android:label="@string/title_activity_ch02_linerlayout_activity" >
-        </activity>
+            android:label="@string/title_activity_ch02_linerlayout_activity"></activity>
         <activity
             android:name=".ch02_framelayout_activity"
-            android:label="@string/title_activity_ch02_framelayout_activity" >
-        </activity>
+            android:label="@string/title_activity_ch02_framelayout_activity"></activity>
         <activity
             android:name=".ch02_textview01_activity"
-            android:label="@string/title_activity_ch02_textview01_activity" >
+            android:label="@string/title_activity_ch02_textview01_activity"></activity>
+        <activity
+            android:name=".ch02_textview02_activity"
+            android:label="activity_ch02_textview02_activity" />
+        <activity
+            android:name=".ch02_alpha_activity"
+            android:label="activity_alpha_activity" />
+        <activity
+            android:name=".ch02_auto_activity"
+            android:label="activity_auto_activity" />
+        <activity
+            android:name=".ch02_datetime_activity"
+            android:label="activity_datetime_activity" />
+        <activity
+            android:name=".ch02_progress_activity"
+            android:label="activity_progress_activity" />
+        <activity
+            android:name=".ch02_tab_activity"
+            android:label="activity_tab_activity" />
+        <activity
+            android:name=".ch02_scroll_activity"
+            android:label="activity_scroll_activity" />
+        <activity
+            android:name=".ch02_listview01_activity"
+            android:label="activity_ch02_listview01_activity" />
+        <activity
+            android:name=".ch02_listview02_activity"
+            android:label="activity_ch02_listview02_activity" />
+        <activity
+            android:name=".ch02_listview03_simple_activity"
+            android:label="activity_ch02_listview03_simple_activity" />
+        <activity
+            android:name=".ch02_listview04_expand_activity"
+            android:label="activity_ch02_listview04_expand_activity" />
+        <activity
+            android:name=".ch02_gridview_activity"
+            android:label="activity_ch02_gridview_activity" />
+        <activity
+            android:name=".ch02_gallery_activity"
+            android:label="activity_ch02_gallery_activity" />
+        <activity
+            android:name=".ch02_dialog_alert1_activity"
+            android:label="activity_dialog_alert1_activity" />
+        <activity
+            android:name=".ch02_toash_activity"
+            android:label="activity_toash_activity" />
+        <activity
+            android:name=".ch02_notification_activity"
+            android:label="activity_notification_activity" />
+        <activity
+            android:name=".ch02_notification_to_activity"
+            android:label="activity_notification_to_activity" />
+
+        <activity
+            android:name=".ch03.DrawView"
+            android:label="activity_planeGame_activity" />
+
+        <activity
+            android:name=".ch03_drawview_activity"
+            android:label="activity_drawview_activity" />
+
+        <activity
+            android:name=".ch03_changecfg_activity"
+            android:configChanges="orientation"
+            android:label="activity_changecfg_activity" />
+
+        <activity
+            android:name=".ch03_handler_activity"
+            android:label="activity_handler_activity" />
+
+        <activity
+            android:name=".ch04_launcher_activity"
+            android:label="activity_ch04_launcher_activity" />
+        <activity
+            android:name=".ch04.MyPreferenceActivity"
+            android:label="activity_MyPreferenceActivity" />
+        <activity
+            android:name=".ch04.MyExpandListActivity"
+            android:label="activity_MyExpandListActivity" />
+
+        <activity
+            android:name=".ch04_bundle_first_activity"
+            android:label="activity_bundle_first_activity" />
+
+        <activity
+            android:name=".ch04_bundle_second_activity"
+            android:label="activity_ch02_bundle_second_activity" />
+
+        <activity
+            android:name=".ch05_intentfilter_activity"
+            android:label="activity_ch05_intentfilter_activity" />
+
+        <activity
+            android:name=".ch05_intentfilter_result_activity"
+            android:label="activity_ch05_intentfilter_result_activity">
+            <intent-filter>
+                <action android:name="ch05_intentfilter_result_activity"/>
+                <category android:name="ch05_intentfilter_categary_one"/>
+                <category android:name="ch05_intentfilter_categary_two"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
-        <activity android:name=".ch02_textview02_activity"
-            android:label="activity_ch02_textview02_activity"/>
-        <activity android:name=".ch02_alpha_activity"
-            android:label="activity_alpha_activity"/>
-        <activity android:name=".ch02_auto_activity"
-            android:label="activity_auto_activity"/>
-        <activity android:name=".ch02_datetime_activity"
-            android:label="activity_datetime_activity"/>
-        <activity android:name=".ch02_progress_activity"
-            android:label="activity_progress_activity"/>
-        <activity android:name=".ch02_tab_activity"
-            android:label="activity_tab_activity"/>
-        <activity android:name=".ch02_scroll_activity"
-            android:label="activity_scroll_activity"/>
-        <activity android:name=".ch02_listview01_activity"
-            android:label="activity_ch02_listview01_activity"/>
-        <activity android:name=".ch02_listview02_activity"
-            android:label="activity_ch02_listview02_activity"/>
-        <activity android:name=".ch02_listview03_simple_activity"
-            android:label="activity_ch02_listview03_simple_activity"/>
-        <activity android:name=".ch02_listview04_expand_activity"
-            android:label="activity_ch02_listview04_expand_activity"/>
-        <activity android:name=".ch02_gridview_activity"
-            android:label="activity_ch02_gridview_activity"/>
-        <activity android:name=".ch02_gallery_activity"
-            android:label="activity_ch02_gallery_activity"/>
-        <activity android:name=".ch02_dialog_alert1_activity"
-            android:label="activity_dialog_alert1_activity"/>
-        <activity android:name=".ch02_toash_activity"
-            android:label="activity_toash_activity"/>
-        <activity android:name=".ch02_notification_activity"
-            android:label="activity_notification_activity"/>
-        <activity android:name=".ch02_notification_to_activity"
-            android:label="activity_notification_to_activity"/>
-
-        <activity android:name=".ch03.DrawView"
-            android:label="activity_planeGame_activity"/>
-
-        <activity android:name=".ch03_drawview_activity"
-            android:label="activity_drawview_activity"/>
-
-        <activity android:name=".ch03_changecfg_activity"
-            android:label="activity_changecfg_activity"
-            android:configChanges="orientation"/>
-
-        <activity android:name=".ch03_handler_activity"
-            android:label="activity_handler_activity"/>
-
-        <activity android:name=".ch04_launcher_activity"
-            android:label="activity_ch04_launcher_activity"/>
-        <activity android:name=".ch04.MyPreferenceActivity"
-            android:label="activity_MyPreferenceActivity"/>
-        <activity android:name=".ch04.MyExpandListActivity"
-            android:label="activity_MyExpandListActivity"/>
-
-        <activity android:name=".ch04_bundle_first_activity"
-            android:label="activity_bundle_first_activity"/>
-
-        <activity android:name=".ch04_bundle_second_activity"
-            android:label="activity_ch02_bundle_second_activity"/>
 
     </application>
 
-    <uses-permission android:name="android.permission.FLASHLIGHT"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
 </manifest>

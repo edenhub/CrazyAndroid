@@ -1,196 +1,277 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:id="@+id/main_layout"
-    android:orientation="horizontal">
+    tools:context=".MainActivity">
 
     <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content" />-->
-
-    <HorizontalScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent">
-
-    <TableLayout
+    <!--android:layout_height="wrap_content" />-->
+    <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/main_layout_ch02"
-        android:orientation="horizontal">
-       <TableRow
-           android:layout_width="fill_parent"
-           android:layout_height="wrap_content"
-           android:id="@+id/main_layout_ch02_01">
-           <Button android:id="@+id/ch02_imageView_bt"
-               android:text="image view"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"/>
-           <Button
-               android:id="@+id/ch02_draw_bt"
-               android:text="draw"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"/>
-       </TableRow>
+        android:fadingEdge="vertical">
 
-        <!--<TableRow-->
-            <!--android:layotu_width="fill_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:id="@+id/main_layout_ch02_02">-->
-            <!--<Button-->
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/main_layout_ch02"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:id="@+id/main_layout_ch02_01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch02_imageView_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="image view" />
+
+                    <Button
+                        android:id="@+id/ch02_draw_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="draw" />
+                </TableRow>
+
+                <!--<TableRow-->
+                <!--android:layotu_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/main_layout_ch02_02">-->
+                <!--<Button-->
                 <!--android:id="@+id/ch02_framelayout_bt"-->
                 <!--android:text="draw"-->
                 <!--android:layout_width="wrap_content"-->
                 <!--android:layout_height="wrap_content"/>-->
-            <!--</TableRow>-->
+                <!--</TableRow>-->
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_layout_ch02_02">
-            <Button android:id="@+id/ch02_framelayout_bt"
-                android:text="image view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_textview_bt01"
-                android:text="tv_bt01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_textview_bt02"
-                android:text="tv_bt02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </TableRow>
+                <TableRow
+                    android:id="@+id/main_layout_ch02_02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_layout_ch02_03">
-            <Button android:id="@+id/ch02_alpha_bt"
-                android:text="alpha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_auto_bt"
-                android:text="auto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_datetime_bt"
-                android:text="datetime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </TableRow>
+                    <Button
+                        android:id="@+id/ch02_framelayout_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="image view" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_layout_ch02_04">
-            <Button android:id="@+id/ch02_progress_bt"
-                android:text="progress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_tab_bt"
-                android:text="tab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_scroll_bt"
-                android:text="scroll"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </TableRow>
+                    <Button
+                        android:id="@+id/ch02_textview_bt01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tv_bt01" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_layout_ch02_05">
-            <Button android:id="@+id/ch02_listview_bt01"
-                android:text="listview01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_listview_bt02"
-                android:text="listview02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_simple_bt"
-                android:text="simple"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_layout_ch02_06">
-            <Button android:id="@+id/ch02_listview_btexpd"
-                android:text="expand"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_gridview_bt"
-                android:text="gridview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_gallery_bt"
-                android:text="Gallery"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_layout_ch02_07">
-            <Button android:id="@+id/ch02_dialog_alert1"
-                android:text="Alert1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_toast_bt"
-                android:text="toast"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch02_notification_bt"
-                android:text="Notification"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </TableRow>
+                    <Button
+                        android:id="@+id/ch02_textview_bt02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tv_bt02" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_layout_ch02_03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch02_alpha_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="alpha" />
+
+                    <Button
+                        android:id="@+id/ch02_auto_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="auto" />
+
+                    <Button
+                        android:id="@+id/ch02_datetime_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="datetime" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_layout_ch02_04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch02_progress_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="progress" />
+
+                    <Button
+                        android:id="@+id/ch02_tab_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tab" />
+
+                    <Button
+                        android:id="@+id/ch02_scroll_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="scroll" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_layout_ch02_05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch02_listview_bt01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="listview01" />
+
+                    <Button
+                        android:id="@+id/ch02_listview_bt02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="listview02" />
+
+                    <Button
+                        android:id="@+id/ch02_simple_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="simple" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_layout_ch02_06"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch02_listview_btexpd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="expand" />
+
+                    <Button
+                        android:id="@+id/ch02_gridview_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="gridview" />
+
+                    <Button
+                        android:id="@+id/ch02_gallery_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gallery" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_layout_ch02_07"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch02_dialog_alert1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alert1" />
+
+                    <Button
+                        android:id="@+id/ch02_toast_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="toast" />
+
+                    <Button
+                        android:id="@+id/ch02_notification_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notification" />
+                </TableRow>
 
 
-        <!--ch03-->
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_layout_ch03_08">
-            <Button android:id="@+id/ch03_planeGame_bt"
-                android:text="PlaneGame"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch03_drawview_bt"
-                android:text="drawview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch03_configurationchange_bt"
-                android:text="ConfigurationChange"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </TableRow>
+                <!--ch03-->
+                <TableRow
+                    android:id="@+id/main_layout_ch03_08"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_layout_ch03_09">
-            <Button android:id="@+id/ch03_handler_bt"
-                android:text="Handler"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch04_launcher_bt"
-                android:text="launcher"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <Button android:id="@+id/ch04_bundle_bt"
-                android:text="bundle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </TableRow>
-     </TableLayout>
+                    <Button
+                        android:id="@+id/ch03_planeGame_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PlaneGame" />
 
-    </HorizontalScrollView>
+                    <Button
+                        android:id="@+id/ch03_drawview_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="drawview" />
 
+                    <Button
+                        android:id="@+id/ch03_configurationchange_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ConfigurationChange" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_layout_ch03_09"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch03_handler_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Handler" />
+
+                    <Button
+                        android:id="@+id/ch04_launcher_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="launcher" />
+
+                    <Button
+                        android:id="@+id/ch04_bundle_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bundle" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_layout_ch05_10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch05_intentfilter_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Intent" />
+                    <!--<Button android:id="@+id/ch04_launcher_bt"-->
+                    <!--android:text="launcher"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"/>-->
+                    <!--<Button android:id="@+id/ch04_bundle_bt"-->
+                    <!--android:text="bundle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"/>-->
+                </TableRow>
+            </TableLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
 
 </LinearLayout>

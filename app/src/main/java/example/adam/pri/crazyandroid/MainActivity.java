@@ -132,6 +132,9 @@ public class MainActivity extends ActionBarActivity {
 //        ch04
         addNewButtonInLayout(R.id.ch04_launcher_bt,ch04_launcher_activity.class);
         addNewButtonInLayout(R.id.ch04_bundle_bt,ch04_bundle_first_activity.class);
+
+//        ch05
+        addNewButtonInLayout(R.id.ch05_intentfilter_bt,ch05_intentfilter_activity.class);
     }
 
     private void addNewButtonInLayout(int id, final Class<? extends Activity> targetActivity){
