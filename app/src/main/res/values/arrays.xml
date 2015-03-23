@@ -30,4 +30,10 @@
         <item>0</item>
         <item>1</item>
     </array>
+
+    <!--ch06-->
+    <array name="ch06_array_test">
+        <item>@string/ch06_string_test01</item>
+        <item>@string/ch06_string_test02</item>
+    </array>
 </resources>

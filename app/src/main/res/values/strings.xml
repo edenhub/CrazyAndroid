@@ -10,4 +10,7 @@
     <string name="title_activity_ch02_framelayout_activity">ch02_framelayout_activity</string>
     <string name="title_activity_ch02_textview01_activity">ch02_textview01_activity</string>
 
+    <!--ch06-->
+    <string name="ch06_string_test01">ch06_string_test01</string>
+    <string name="ch06_string_test02">ch06_string_test02</string>
 </resources>

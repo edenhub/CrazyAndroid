@@ -7,4 +7,8 @@
     <color name="color5">#00aaaa</color>
     <color name="color6">#43cccc</color>
     <color name="color7">#aaaaaa</color>
+
+    <!--ch06-->
+    <color name="ch06_color_test01">#ff0000</color>
+    <color name="ch06_color_test02">#ffaaaa</color>
 </resources>

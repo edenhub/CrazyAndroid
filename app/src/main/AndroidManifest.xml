@@ -133,6 +133,16 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ch06_value_activity"
+            android:label="activity_ch06_value_activity"/>
+
+        <activity android:name=".ch06_books_activity"
+            android:label="activity_ch06_books_activity"
+            />
+
+        <activity android:name=".ch06_media_activity"
+            android:label="actvity_ch06_media_activity"/>
+
     </application>
 
     <uses-permission android:name="android.permission.FLASHLIGHT" />
