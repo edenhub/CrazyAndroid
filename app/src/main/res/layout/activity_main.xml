@@ -280,14 +280,34 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="media" />
-                    <!--<Button android:id="@+id/ch06_value_bt"-->
-                        <!--android:text="value"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"/>-->
-                    <!--<Button android:id="@+id/ch06_books_bt"-->
-                        <!--android:text="books"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"/>-->
+                    <Button android:id="@+id/ch08_sharepreference_bt"
+                        android:text="sharedpreference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <Button android:id="@+id/ch08_file_bt"
+                        android:text="file"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_layout_ch08_12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch08_browse_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="browse" />
+                    <Button android:id="@+id/ch08_sqlite_bt"
+                        android:text="sqlite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <Button android:id="@+id/ch08_viewflipper_bt"
+                        android:text="viewflipper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
                 </TableRow>
             </TableLayout>
 

@@ -140,6 +140,13 @@ public class MainActivity extends ActionBarActivity {
         addNewButtonInLayout(R.id.ch06_value_bt,ch06_value_activity.class);
         addNewButtonInLayout(R.id.ch06_books_bt,ch06_books_activity.class);
         addNewButtonInLayout(R.id.ch06_media_bt,ch06_media_activity.class);
+
+//        ch08
+        addNewButtonInLayout(R.id.ch08_sharepreference_bt,ch08_sharepreference_activity.class);
+        addNewButtonInLayout(R.id.ch08_file_bt,ch08_file_activity.class);
+        addNewButtonInLayout(R.id.ch08_browse_bt,ch08_browsedir_activity.class);
+        addNewButtonInLayout(R.id.ch08_sqlite_bt,ch08_sqlite_activity.class);
+        addNewButtonInLayout(R.id.ch08_viewflipper_bt,ch08_viewfilpper_activity.class);
     }
 
     private void addNewButtonInLayout(int id, final Class<? extends Activity> targetActivity){

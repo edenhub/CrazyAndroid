@@ -143,6 +143,21 @@
         <activity android:name=".ch06_media_activity"
             android:label="actvity_ch06_media_activity"/>
 
+        <activity android:name=".ch08_sharepreference_activity"
+            android:label="activity_ch08_sharedpreference_activity"/>
+
+        <activity android:name=".ch08_file_activity"
+            android:label="activity_ch08_file_activity"/>
+
+        <activity android:name=".ch08_browsedir_activity"
+            android:label="activity_ch08_browsedir_activity"/>
+
+        <activity android:name=".ch08_sqlite_activity"
+            android:label="activity_ch08_sqlite_activity"/>
+
+        <activity android:name=".ch08_viewfilpper_activity"
+            android:label="activity_ch08_viewflipper_activity"/>
+
     </application>
 
     <uses-permission android:name="android.permission.FLASHLIGHT" />

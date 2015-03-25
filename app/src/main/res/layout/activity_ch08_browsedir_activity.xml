@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/ch08_browsedir_dir_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="/mnt/sdcard" />
+
+    <ListView
+        android:id="@+id/ch08_browsedir_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <Button
+        android:id="@+id/ch08_browsedir_parent_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="上一个目录" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/ch08_browsedir_icon"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/ch08_browsedir_fileName"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+</LinearLayout>
