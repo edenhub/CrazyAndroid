@@ -153,6 +153,7 @@ public class MainActivity extends ActionBarActivity {
 
 //        ch10
         addNewButtonInLayout(R.id.ch10_countservice_bt,ch10_countservice_activity.class);
+        addNewButtonInLayout(R.id.ch10_orderbrodcast_bt,ch10_OrderBroadcast_activity.class);
     }
 
     private void addNewButtonInLayout(int id, final Class<? extends Activity> targetActivity){

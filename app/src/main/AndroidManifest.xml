@@ -170,6 +170,19 @@
         <activity android:name=".ch10_countservice_activity"
             android:label="activity_ch10_countservice_activity"/>
 
+        <activity android:name=".ch10_OrderBroadcast_activity"
+            android:label="activity_ch10_OrderBroadcast_activity"/>
+        <receiver android:name=".ch10.OrderBrocastReceiverA">
+            <intent-filter android:priority="20">
+                <action android:name="ch10_OrderBroadcast_actvity"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ch10.OrderBrocastReceiverB">
+            <intent-filter android:priority="10">
+                <action android:name="ch10_OrderBroadcast_actvity"/> b
+            </intent-filter>
+        </receiver>
+
     </application>
 
     <uses-permission android:name="android.permission.FLASHLIGHT" />
