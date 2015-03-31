@@ -147,6 +147,12 @@ public class MainActivity extends ActionBarActivity {
         addNewButtonInLayout(R.id.ch08_browse_bt,ch08_browsedir_activity.class);
         addNewButtonInLayout(R.id.ch08_sqlite_bt,ch08_sqlite_activity.class);
         addNewButtonInLayout(R.id.ch08_viewflipper_bt,ch08_viewfilpper_activity.class);
+
+//        ch09
+        addNewButtonInLayout(R.id.ch09_dicResover_bt,ch09_dictResover_activity.class);
+
+//        ch10
+        addNewButtonInLayout(R.id.ch10_countservice_bt,ch10_countservice_activity.class);
     }
 
     private void addNewButtonInLayout(int id, final Class<? extends Activity> targetActivity){

@@ -158,6 +158,18 @@
         <activity android:name=".ch08_viewfilpper_activity"
             android:label="activity_ch08_viewflipper_activity"/>
 
+        <activity android:name=".ch09_dictResover_activity"
+            android:label="activity_ch09_dictResover_activity"/>
+
+        <service android:name=".ch10.CountService">
+            <intent-filter>
+                <action android:name="example.adam.pri.crazyandroid.COUNT_SERVICE"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ch10_countservice_activity"
+            android:label="activity_ch10_countservice_activity"/>
+
     </application>
 
     <uses-permission android:name="android.permission.FLASHLIGHT" />

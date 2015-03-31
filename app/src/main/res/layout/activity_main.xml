@@ -309,6 +309,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_layout_ch09_13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/ch09_dicResover_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="dicResover" />
+                    <Button android:id="@+id/ch10_countservice_bt"
+                        android:text="countservice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <!--<Button android:id="@+id/ch08_viewflipper_bt"-->
+                        <!--android:text="viewflipper"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"/>-->
+                </TableRow>
             </TableLayout>
 
         </HorizontalScrollView>
